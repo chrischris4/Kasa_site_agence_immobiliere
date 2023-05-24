@@ -92,8 +92,20 @@
         flex-direction: column;
     }
 
+    .title-tag {
+        width: 100%;
+    }
+
     .tags {
+        display: flex;
         width: 90%;
+        flex-wrap: wrap;
+    }
+    .tag {
+        border-radius: 5px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 10px;
     }
 
     h1 {
@@ -102,6 +114,40 @@
 
     h2 {
         font-size: 14px;
+    }
+
+    .heberger-rate {
+        margin-top: 10px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .heberger {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .star,
+    .starG {
+        width: 13px;
+        height: 13px;
+    }
+
+    .heberger-nom {
+        font-size: 12px;
+    }
+
+    .heberger-pic {
+        width: 32px;
+        height: 32px;
+    }
+
+    .vector,
+    .vectorDown {
+        width: 16px;
+        height: 9px;
     }
 
     .collapse2 {

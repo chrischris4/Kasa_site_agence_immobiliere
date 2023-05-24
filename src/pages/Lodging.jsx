@@ -18,9 +18,13 @@ function Lodging() {
             const stars = [];
             for (let i = 1; i <= 5; i++) {
                 if (i <= starCount) {
-                    stars.push(<img key={i} src={Star} alt="star" />);
+                    stars.push(
+                        <img className="star" key={i} src={Star} alt="star" />
+                    );
                 } else {
-                    stars.push(<img key={i} src={StarG} alt="star" />);
+                    stars.push(
+                        <img className="starG" key={i} src={StarG} alt="star" />
+                    );
                 }
             }
             return stars;
@@ -101,43 +105,3 @@ function Lodging() {
 }
 
 export default Lodging;
-
-/*
-
-
-<div className="allInfo">
-	<div className="infoTag">
-		<div className="nomLieu">
-			<h1>l</h1>
-			<h2>lieu</h2>
-		</div>
-		<div className="tagLogement">
-			<Tag />
-			<Tag />
-			<Tag />
-		</div>
-	</div>
-	<div className="nomImgNote">
-		<div className="nomImg">
-			<p>John</p>
-			<img
-				src={portrait}
-				alt=""
-				className="imgPortrait"
-			/>
-		</div>
-		<div className="note">
-			<img src={portrait} alt="" className="star" />
-			<img src={portrait} alt="" className="star" />
-			<img src={portrait} alt="" className="star" />
-			<img src={portrait} alt="" className="star" />
-			<img src={portrait} alt="" className="star" />
-		</div>
-	</div>
-</div>
-<div className="collapseLogement">
-	<Collapse />
-	<Collapse />
-</div>
-
-*/

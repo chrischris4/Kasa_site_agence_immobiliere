@@ -33,7 +33,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 550px) {

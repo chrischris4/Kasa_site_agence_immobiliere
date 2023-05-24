@@ -10,7 +10,7 @@ function Gallery(props) {
                 <Link className="prev" to={`/logement/${props.id - 1}`}>
                     <img className="vectorl" src={VectorL} alt="vectorl" />
                 </Link>
-                <Link className="next" to={`/logement/${props.id + 1}`}>
+                <Link className="next" to={'#'}>
                     <img className="vectorr" src={VectorR} alt="vectorr" />
                 </Link>
                 <img
