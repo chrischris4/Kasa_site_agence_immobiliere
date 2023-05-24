@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+.header {
+    margin: auto;
+    width: 80%;
+    color: black;
+    align-items: center;
+    padding: 32px 0px 32px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.link {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.link :hover {
+    border-bottom: 1px solid #ff6060;
+    color: #ff6060;
+}
+
+@media screen and (max-width: 550px) {
+    .kasa-logo {
+        width: 145px;
+        height: 47px;
+    }
+
+    .header {
+        width: 90%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    .link {
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+}

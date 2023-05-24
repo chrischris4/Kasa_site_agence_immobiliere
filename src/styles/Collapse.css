@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+.collapse {
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button {
+    border: none;
+    background-color: #ff6060;
+    text-decoration: none;
+}
+
+.collapseOpen {
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    padding: 10px 0px 20px 10px;
+    height: fit-content;
+    background-color: #f6f6f6;
+    color: #ff6060;
+}
+
+.collapse-title {
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: #ff6060;
+    font-family: 'Montserrat';
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .collapse {
+        width: 100%;
+    }
+
+    .collapse-title {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
