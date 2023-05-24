@@ -16,22 +16,41 @@
     flex-direction: row;
 }
 
-.tags {
+.title-tag {
     width: 50%;
+}
+
+.tags {
+    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .tag {
+    padding: 0px 10px;
+    margin-right: 10px;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 30%;
     border-radius: 10px;
     height: 30px;
     background-color: #ff6060;
     color: white;
+}
+
+.heberger {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.heberger-nom {
+    padding-right: 20px;
+}
+
+.heberger-pic {
+    border-radius: 50%;
 }
 
 .heberger-rate {
@@ -39,6 +58,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.rate {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse2 {
+    width: 45%;
 }
 
 .collapse-lodging {
@@ -57,5 +86,25 @@
     .collapse-lodging {
         display: flex;
         flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .tags {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .collapse2 {
+        width: 100%;
     }
 }

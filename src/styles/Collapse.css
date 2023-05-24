@@ -45,4 +45,8 @@ button {
         padding: 5px;
         font-size: 12px;
     }
+
+    .collapseOpen {
+        font-size: 12px;
+    }
 }
