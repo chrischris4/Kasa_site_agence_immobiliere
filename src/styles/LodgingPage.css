@@ -120,8 +120,12 @@
         margin-top: 10px;
         align-items: center;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: row-reverse;
         width: 100%;
+    }
+
+    .rate {
+        width: 30%;
     }
 
     .heberger {
@@ -136,6 +140,7 @@
     }
 
     .heberger-nom {
+        padding-right: 10px;
         font-size: 12px;
     }
 

@@ -60,6 +60,7 @@ h2 {
     }
 
     .lodging-card {
+        width: auto;
         margin: 0 0 20px 0;
         height: 255px;
     }

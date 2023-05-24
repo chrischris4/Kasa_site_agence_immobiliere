@@ -1,15 +1,16 @@
 .lodging-list {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    width: 96%;
+    justify-items: center;
 }
 
 @media screen and (max-width: 550px) {
     .lodging-list {
         padding-top: 20px;
+        grid-template-columns: 1fr;
 
         width: 90%;
     }
