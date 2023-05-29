@@ -1,6 +1,6 @@
 import Banner from '../components/Banner';
 import LodgingList from '../components/LodgingList';
-import bannerImage from '../assets/kasa-homepage.jpg';
+import bannerImage from '../assets/kasa-homepage.webp';
 import '../styles/Home.css';
 
 function Home() {

@@ -11,6 +11,7 @@ function Lodging() {
     const navigate = useNavigate();
 
     const [lodgingData, setLodgingData] = useState([]);
+    // const [lodgingData, setLodgingData] = useState({ équipements: [] });
 
     const getStarRating = (note) => {
         const starCount = parseInt(note);
@@ -67,7 +68,11 @@ function Lodging() {
                         <div className="heberger-nom">
                             <h2>
                                 {lodgingData.héberger &&
-                                    lodgingData.héberger.nom}
+                                    lodgingData.héberger.nom.split(' ')[0]}{' '}
+                            </h2>
+                            <h2>
+                                {lodgingData.héberger &&
+                                    lodgingData.héberger.nom.split(' ')[1]}{' '}
                             </h2>
                         </div>
                         <img
@@ -98,6 +103,15 @@ function Lodging() {
                         title={'Équipements'}
                         content={lodgingData.équipements}
                     />
+                    {/* <div className="collapse2">
+  <Collapse title={'Équipements'}>
+    <ul>
+      {lodgingData.équipements.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  </Collapse>
+</div> */}
                 </div>
             </div>
         </div>

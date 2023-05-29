@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-import bannerImage from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
+import bannerImage from '../assets/kalen-emsley.webp';
 import '../styles/About.css';
 
 function About() {
