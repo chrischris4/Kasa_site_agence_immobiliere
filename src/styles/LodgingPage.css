@@ -1,15 +1,9 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Bold.ttf');
-}
-
 .page-container-lodging {
     width: 80%;
     margin: auto;
 }
 
 .info {
-    font-family: 'Montserrat';
     color: #ff6060;
     width: 100%;
     display: flex;
@@ -20,6 +14,17 @@
     width: 50%;
 }
 
+.title-tag > h1 {
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.title-tag > h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .tags {
     width: 70%;
     flex-wrap: wrap;
@@ -28,6 +33,7 @@
 }
 
 .tag {
+    font-weight: 500;
     margin-top: 5px;
     padding: 0px 10px;
     margin-right: 10px;
@@ -52,6 +58,8 @@
 }
 
 .heberger-nom > h2 {
+    font-weight: 500;
+    font-size: 18px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -86,7 +94,7 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 991px) {
     .page-container-lodging {
         width: 90%;
     }

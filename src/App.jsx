@@ -7,8 +7,6 @@ import About from './pages/About';
 import Lodging from './pages/Lodging';
 import Error404 from './pages/Error404';
 
-console.log('hey');
-
 function App() {
 	return (
 		<Router>

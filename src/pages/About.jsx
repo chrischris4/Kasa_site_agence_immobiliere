@@ -27,6 +27,7 @@ function About() {
                             index={index}
                             title={data.title}
                             content={data.content}
+                            open={false}
                         />
                     ))}
             </div>

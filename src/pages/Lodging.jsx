@@ -11,7 +11,6 @@ function Lodging() {
     const navigate = useNavigate();
 
     const [lodgingData, setLodgingData] = useState([]);
-    // const [lodgingData, setLodgingData] = useState({ équipements: [] });
 
     const getStarRating = (note) => {
         const starCount = parseInt(note);
@@ -49,14 +48,14 @@ function Lodging() {
 
     return (
         <div className="page-container-lodging">
-            <Gallery carousel={lodgingData.cover} />
+            <Gallery pictures={lodgingData.pictures} />
             <div className="info">
                 <div className="title-tag">
                     <h1>{lodgingData.title}</h1>
                     <h2>{lodgingData.location}</h2>
                     <div className="tags">
-                        {lodgingData['Mots clés'] &&
-                            lodgingData['Mots clés'].map((keyword, index) => (
+                        {lodgingData['tags'] &&
+                            lodgingData['tags'].map((keyword, index) => (
                                 <div className="tag" key={index}>
                                     {keyword}
                                 </div>
@@ -67,27 +66,22 @@ function Lodging() {
                     <div className="heberger">
                         <div className="heberger-nom">
                             <h2>
-                                {lodgingData.héberger &&
-                                    lodgingData.héberger.nom.split(' ')[0]}{' '}
+                                {lodgingData.host &&
+                                    lodgingData.host.name.split(' ')[0]}{' '}
                             </h2>
                             <h2>
-                                {lodgingData.héberger &&
-                                    lodgingData.héberger.nom.split(' ')[1]}{' '}
+                                {lodgingData.host &&
+                                    lodgingData.host.name.split(' ')[1]}{' '}
                             </h2>
                         </div>
                         <img
                             className="heberger-pic"
-                            src={
-                                lodgingData.héberger &&
-                                lodgingData.héberger.image
-                            }
-                            alt={
-                                lodgingData.héberger && lodgingData.héberger.nom
-                            }
+                            src={lodgingData.host && lodgingData.host.picture}
+                            alt={lodgingData.host && lodgingData.host.name}
                         />
                     </div>
                     <div className="rate">
-                        {getStarRating(lodgingData.note)}
+                        {getStarRating(lodgingData.rating)}
                     </div>
                 </div>
             </div>
@@ -101,17 +95,14 @@ function Lodging() {
                 <div className="collapse2">
                     <Collapse
                         title={'Équipements'}
-                        content={lodgingData.équipements}
+                        content={
+                            lodgingData.equipments &&
+                            lodgingData.equipments.length > 0 &&
+                            lodgingData.equipments.map((equipment, index) => {
+                                return <li key={index}>{equipment}</li>;
+                            })
+                        }
                     />
-                    {/* <div className="collapse2">
-  <Collapse title={'Équipements'}>
-    <ul>
-      {lodgingData.équipements.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  </Collapse>
-</div> */}
                 </div>
             </div>
         </div>

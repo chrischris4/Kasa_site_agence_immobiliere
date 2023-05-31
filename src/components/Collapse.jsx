@@ -4,7 +4,7 @@ import vectorDown from '../assets/VectorDown.png';
 import '../styles/Collapse.css';
 
 function Collapse(props) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(props.open ?? false);
 
     const collapseOpen = () => {
         setIsOpen(!isOpen);
@@ -12,7 +12,7 @@ function Collapse(props) {
 
     return (
         <div className="collapse">
-            <h2 className="collapse-title">
+            <h2 className="collapse-title" onClick={collapseOpen}>
                 {props.title}
                 <button onClick={collapseOpen}>
                     {isOpen ? (
