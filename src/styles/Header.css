@@ -25,7 +25,7 @@ nav {
     color: #ff6060;
 }
 
-a.link :hover {
+.link :hover {
     border-bottom: 1px solid #ff6060;
     color: #ff6060;
 }

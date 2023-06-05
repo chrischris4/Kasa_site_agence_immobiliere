@@ -26,7 +26,6 @@
 }
 
 .tags {
-    width: 70%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -94,11 +93,74 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 550px) and (max-width: 991px) {
     .page-container-lodging {
         width: 90%;
     }
+    .heberger-rate {
+        margin-bottom: 10px;
+    }
 
+    .tags {
+        margin-bottom: 10px;
+    }
+
+    .star,
+    .starG {
+        margin-right: 10px;
+        width: 17px;
+        height: 17px;
+    }
+
+    .rate {
+        justify-content: flex-start;
+    }
+    .heberger-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .collapse-lodging {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+    .heberger-rate {
+        height: 60px;
+        margin-top: 0px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .title-tag {
+        width: 100%;
+    }
+
+    .collapse2 {
+        margin-top: -10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .heberger {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .vector,
+    .vectorDown {
+        width: 16px;
+        height: 9px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .page-container-lodging {
+        width: 90%;
+    }
     .collapse-lodging {
         display: flex;
         flex-direction: column;
@@ -112,10 +174,6 @@
         width: 100%;
     }
 
-    .tags {
-        display: flex;
-        width: 90%;
-    }
     .tag {
         border-radius: 5px;
         height: 20px;
@@ -156,12 +214,12 @@
 
     .heberger-nom {
         padding-right: 10px;
-        font-size: 12px;
     }
 
     .heberger-nom > h2 {
         margin-top: 0px;
         margin-bottom: 0px;
+        font-size: 12px;
     }
 
     .heberger-pic {
