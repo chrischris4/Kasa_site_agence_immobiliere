@@ -28,12 +28,12 @@ button {
     margin-bottom: 0px;
     padding: 10px;
     background-color: #ff6060;
-    font-family: 'Montserrat';
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
+    cursor:pointer;
 }
 
 @media screen and (max-width: 991px) {
